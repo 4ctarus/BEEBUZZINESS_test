@@ -14,8 +14,7 @@ const NUMBERS = [
 let nb = process.argv[2];
 let output = '';
 
-if (nb) nb = nb.substring(0,3);
-else nb = '0123456789';
+if (!nb) nb = '0123456789';
 
 for(let y = 0; y < 3; y++) {
   for(let l = 0; l < nb.length; l++) {
